@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 18 15:23:55 IST 2020</td>
+<td>Started on:</td><td>Fri Jun 19 10:43:11 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (6 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (19 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Testcase.Addcustomertest.Addcustomer()'><b>Addcustomer</b><br>Test class: Testcase.Addcustomertest</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.IllegalArgumentException: Sheet index (1) is out of range (0..0)
+<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-Caused by: java.lang.IllegalArgumentException: Sheet index (1) is out of range (0..0)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetIndex(XSSFWorkbook.java:1470)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetAt(XSSFWorkbook.java:1146)
+Caused by: java.lang.NullPointerException
 	at Utility.Datadriver.getrowcount(Datadriver.java:36)
-	at Testcase.Addcustomertest.input1feed(Addcustomertest.java:36)
+	at Testcase.Addcustomertest.input1feed(Addcustomertest.java:38)
 	... 25 more
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1062181581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1062181581'><pre>java.lang.RuntimeException: java.lang.IllegalArgumentException: Sheet index (1) is out of range (0..0)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace691863815", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace691863815'><pre>java.lang.RuntimeException: java.lang.NullPointerException
 	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:52)
 	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:148)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
@@ -112,11 +110,9 @@ Caused by: java.lang.IllegalArgumentException: Sheet index (1) is out of range (
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.IllegalArgumentException: Sheet index (1) is out of range (0..0)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetIndex(XSSFWorkbook.java:1470)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetAt(XSSFWorkbook.java:1146)
+Caused by: java.lang.NullPointerException
 	at Utility.Datadriver.getrowcount(Datadriver.java:36)
-	at Testcase.Addcustomertest.input1feed(Addcustomertest.java:36)
+	at Testcase.Addcustomertest.input1feed(Addcustomertest.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -127,7 +123,7 @@ Caused by: java.lang.IllegalArgumentException: Sheet index (1) is out of range (
 	... 25 more
 </pre></div></td>
 <td>0</td>
-<td>Testcase.Addcustomertest@27adc16e</td></tr>
+<td>Testcase.Addcustomertest@65466a6a</td></tr>
 </table><p>
 </body>
 </html>
