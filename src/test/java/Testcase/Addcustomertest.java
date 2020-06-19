@@ -2,6 +2,7 @@ package Testcase;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -17,13 +18,14 @@ public class Addcustomertest extends Testbase {
 
 	public  void Addcustomer(String  FirstName, String Latsname, String postcode) {
 		
-
-		driver.findElement(By.xpath(or.getProperty("addcust"))).click();
+		Addcust Add1 = PageFactory.initElements(driver, Addcust.class);
+		
+		Add1.addcust.click();
 		System.out.println("addcust");
-		driver.findElement(By.cssSelector(or.getProperty("firstname"))).sendKeys(FirstName);
-		driver.findElement(By.cssSelector(or.getProperty("lastname"))).sendKeys(Latsname);
-		driver.findElement(By.cssSelector(or.getProperty("postcode"))).sendKeys(postcode);
-		driver.findElement(By.xpath(or.getProperty("addcustbutton"))).click();
+		Add1.firstname.sendKeys(FirstName);
+		Add1.lastname.sendKeys(Latsname);
+		Add1.postcode.sendKeys(postcode);
+		Add1.addcustbutton.click();
 
 	}
 

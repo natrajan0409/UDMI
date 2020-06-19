@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -27,9 +28,12 @@ public class Testbase {
 	public static Datadriver excel = new Datadriver();
 	public static Addcust ADD = new Addcust(driver);
 	public static Properties or = new Properties();
+	
 	@BeforeSuite
 	public void setup() {
 
+		
+		 
 		if (driver == null) {
 			try {
 				fis = new FileInputStream(path + "\\src\\test\\resources\\config.properties");
@@ -95,6 +99,7 @@ public class Testbase {
 
 	}
 
+	
 	public boolean elementpresent(By by) {
 		try {
 			driver.findElement(by);
